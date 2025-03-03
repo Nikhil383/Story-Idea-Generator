@@ -35,7 +35,7 @@ text-gen-project/
 
 ### 1. Clone the Repository
 If this project is hosted on a git repository, clone it:
-git clone <repository-url>
+git clone https://github.com/Nikhil383/Story-Idea-Generator.git
 cd text-gen-project
 
 ### 2. Create and Activate a Virtual Environment
