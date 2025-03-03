@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Idea Generator</title>
+    <<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Story Idea Generator</h1>
+        <form method="POST">
+            <label for="genre">Genre (e.g., Fantasy, Sci-Fi, Mystery):</label><br>
+            <input type="text" id="genre" name="genre" required><br><br>
+
+            <label for="character">Describe the main character (e.g., a curious young wizard, a rogue AI):</label><br>
+            <input type="text" id="character" name="character" required><br><br>
+
+            <button type="submit">Generate Story Idea</button>
+        </form>
+
+        {% if prompt %}
+        <h2>Generated Prompt:</h2>
+        <p>{{ prompt }}</p>
+        {% endif %}
+
+        {% if story_idea %}
+        <h2>Story Idea:</h2>
+        <p>{{ story_idea }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
