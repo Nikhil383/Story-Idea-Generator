@@ -10,3 +10,45 @@ A web-based text generation application built using LangChain, Hugging Face Tran
 - Easy to swap out the underlying model (e.g., switch to a Hugging Face Inference API or other local models).
 
 ## Project Structure
+
+
+## Prerequisites
+- Python 3.8 or higher
+- A virtual environment (recommended)
+- Access to a machine with at least 4 GB of RAM (for running `gpt2-medium` locally)
+- Internet connection (for downloading models and dependencies)
+
+## Setup Instructions
+
+### 1. Clone the Repository
+If this project is hosted on a git repository, clone it:
+git clone <repository-url>
+cd story-gen
+### 2. Create and Activate a Virtual Environment
+py -m venv env
+### 3. Install Dependencies
+pip install -r requirements.txt
+### 4. Verify Project Files
+Ensure the following files are present in the project root:
+
+main.py
+prompt.py
+model.py
+requirements.txt
+templates/index.html
+static/style.css
+
+## USAGE
+### Running the Application
+#### 1. Activate your virtual environment (if not already active)
+venv\bin\activate.bat
+
+#### 2. run the app
+py main.py
+
+### Using the Web Interface
+#### 1. On the webpage, enter a genre (e.g., "Fantasy", "Sci-Fi") and a character description (e.g., "a curious young wizard").
+#### 2. Click the "Generate Story Idea" button.
+#### 3. The generated prompt and story idea will be displayed below the form.
+
+### Example 
